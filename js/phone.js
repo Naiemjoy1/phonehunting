@@ -13,6 +13,18 @@ const displayPhones = phones =>{
     //clear container
     phoneContainer.textContent = '';
 
+    // display show all button 
+    const showAllContainer = document.getElementById('show-all-container')
+    if(phones.length > 12){
+      showAllContainer.classList.remove('hidden')
+    }
+    else{
+      showAllContainer.classList.add('hidden');
+    }
+
+    //display only 12
+    phones = phones.slice(0,12);
+
     phones.forEach(phone =>{
         console.log(phone);
         //2 create a div
