@@ -29,6 +29,34 @@
                 <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
         </section>
+
+        <!-- show details modal -->
+        <!-- Open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 id="show-detail-phone-name" class="font-bold text-3xl"></h3>
+            <div id="show-detail-container">
+
+            </div>
+            <div class="modal-action">
+            <form method="dialog">
+                <!-- if there is a button in form, it will close the modal -->
+                <button class="btn bg-[#DC3545] text-white">Close</button>
+            </form>
+            </div>
+            <!-- <div>
+                <img class="justify-center" src="${phone.image}" alt="" />
+                <p><span class="text-xl font-semibold">Storage: </span>${phone?.mainFeatures?.storage}</p>
+                <p><span class="text-xl font-semibold">Display Size: </span>${phone.mainFeatures?.displaySize}</p>
+                <p><span class="text-xl font-semibold">Chipset: </span>${phone.mainFeatures?.chipSet}</p>
+                <p><span class="text-xl font-semibold">Memory: </span>${phone.mainFeatures?.memory}</p>
+                <p><span class="text-xl font-semibold">Slug: </span>${phone.slug}</p>
+                <p><span class="text-xl font-semibold">Release data: </span>${phone.releaseDate}</p>
+                <p><span class="text-xl font-semibold">Brand: </span>${phone.brand}</p>
+                <p><span class="text-xl font-semibold">GPS: </span>${phone.others?.GPS || 'No GPS available'}</p>
+            </div> -->
+        </div>
+        </dialog>
     </main>
     <footer>
 
