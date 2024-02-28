@@ -38,10 +38,10 @@ const displayPhones = (phones,isShowAll) =>{
         phoneCard.innerHTML = `
         <figure><img src="${phone.image}" alt="Shoes" /></figure>
         <div class="card-body">
-          <h2 class="card-title">${phone.phone_name}</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
+          <h2 class=" font-bold text-2xl text-center">${phone.phone_name}</h2>
+          <p class="text-center">There are many variations of passages of available, but the majority have suffered</p>
           <div class="card-actions justify-center">
-            <button onclick="handleShowDetail('${phone.slug}')" class="btn btn-primary">Show Details</button>
+            <button onclick="handleShowDetail('${phone.slug}')" class="btn btn-primary w-[180px]">Show Details</button>
           </div>
         </div>`;
         //4 append child
@@ -70,7 +70,7 @@ const showPhoneDetails = (phone) =>{
 
   const showDetailContainer = document.getElementById('show-detail-container');
   showDetailContainer.innerHTML = `
-  <img src="${phone.image}" alt="" />
+  <img src="${phone.image}" alt=""/>
   <p><span class="text-base font-semibold">Storage: </span>${phone?.mainFeatures?.storage}</p>
   <p><span class="text-base font-semibold">Display Size: </span>${phone.mainFeatures?.displaySize}</p>
   <p><span class="text-base font-semibold">Chipset: </span>${phone.mainFeatures?.chipSet}</p>
