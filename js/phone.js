@@ -36,7 +36,7 @@ const displayPhones = (phones,isShowAll) =>{
         phoneCard.classList = `card p-4 bg-gray-100 shadow-xl`;
         //3 set innerhtml
         phoneCard.innerHTML = `
-        <figure><img src="${phone.image}" alt="Shoes" /></figure>
+        <figure><img class="bg-[#0D6EFD0D]" src="${phone.image}" alt="Shoes" /></figure>
         <div class="card-body">
           <h2 class=" font-bold text-2xl text-center">${phone.phone_name}</h2>
           <p class="text-center">There are many variations of passages of available, but the majority have suffered</p>
